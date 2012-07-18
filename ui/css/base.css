@@ -1,0 +1,59 @@
+body {
+  width: 800px;
+  margin: 40px auto;
+  color: #333;
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+}
+
+@media print {
+  body {
+    margin: 0 auto;
+  }
+}
+
+.name h1{
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  font-style: italic;
+}
+
+  ul li::after {
+    content: ', ';
+  }
+
+  ul li:last-child::after {
+    content: none;
+  }
+
+section h3 {
+  margin-bottom: 0;
+}
+
+  section h3::after {
+    content: ':';
+  }
+
+section h4 {
+  margin-bottom: 0;
+}
+
+section time {
+  font-size: small;
+}
+
+section h5 {
+  margin-bottom: 10px;
+}
+
+.job ul {
+  font-size: small;
+}
